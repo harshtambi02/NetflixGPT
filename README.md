@@ -99,3 +99,9 @@ it is because of react strict moode as we disable the strict mode in index.js we
 - Before adding the toggling feature into the GPT search button we will have to sotre that page somewhere we can use state variable for that but we are already using redux so we can store that in redux by creating the new slice.
 
 - We use useRef to get the data from the GptSearchBox on the text.
+
+- Once we have got the movie data then we just pushed it inside our store and show it to the user.
+
+- We can pass an object insdide the dispatch(name({})) to pass muiltiple actions and then we have to extract that in our slice.
+
+- If we searched something and go back to homepage then it is not deleting the result and it was not in the homepage DOM because these were present in our redux store there are two layes data and ui and gpt page is not in the ui layer and data layer is still holding the data as soon as we come to our gpt page the data layer populates the page.

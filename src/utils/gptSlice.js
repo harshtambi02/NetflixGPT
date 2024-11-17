@@ -29,8 +29,8 @@ const gptSlice = createSlice({
             state.showGptSearch = !state.showGptSearch;
         },
         addGptMovieResult:(state,action)=>{
-           const{movieNames,movieResult}=action.payload;
-           state.movieNames=movieNames;
+           const{movieNames,movieResult}=action.payload;  // here we are extracting that actions from gpt search bar to pass multiple actions.
+           state.movieNames=movieNames;  // here and in below line we are setting this into the state.
            state.movieResult=movieResult
         }
     },

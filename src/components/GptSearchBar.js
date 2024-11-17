@@ -60,7 +60,7 @@ const GptSearchBar = () => {
           
                 const tmdbResult = await Promise.all(promisedArray);
                 console.log(tmdbResult);
-                dispatch(addGptMovieResult({movieNames:gptMovies,movieResult:tmdbResult}));
+                dispatch(addGptMovieResult({movieNames:gptMovies,movieResult:tmdbResult})); // adding multiple results in the same action
                   
                 } 
                 catch (error) {

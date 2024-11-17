@@ -6,7 +6,8 @@ export const API_OPTIONS = {
     method: 'GET',
     headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZjUwMjQzZmI2M2I5ZGFkODZjZGQyOWUzYzAzYzU3NCIsIm5iZiI6MTczMTU3NTc1Ni45ODkwMTE4LCJzdWIiOiI2NzM1YmRhOWQ0ZmZiYTFlOGIyYWRlYzIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.vgUwdcxIeGNF32pMUI5nqTOU93z0UyNgAGCo95nYxuo'
+    Authorization: "Bearer "+process.env.REACT_APP_TMDB_KEY
+
   }
 }
 
@@ -19,6 +20,6 @@ export const SUPPORTED_LANGUAGES = [{identifier: "en", name: "English"},
   {identifier: "spanish", name: "Spanish"},
 ]
 
-// export const OPENAI_KEY = "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"
 
-export const GENAI_KEY = "AIzaSyDnV2qRFRXz8kOQHyncEKyMVIUTgXwqCkk"
+
+export const GENAI_KEY =process.env.REACT_APP_GENAI_KEY
