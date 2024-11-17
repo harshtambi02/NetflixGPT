@@ -105,3 +105,7 @@ it is because of react strict moode as we disable the strict mode in index.js we
 - We can pass an object insdide the dispatch(name({})) to pass muiltiple actions and then we have to extract that in our slice.
 
 - If we searched something and go back to homepage then it is not deleting the result and it was not in the homepage DOM because these were present in our redux store there are two layes data and ui and gpt page is not in the ui layer and data layer is still holding the data as soon as we come to our gpt page the data layer populates the page.
+
+- Now we will learn memoization like like when we switch bw pages it makes an unnecessory api calls and we can control that call coz data was already inside the redux store.
+
+- So basically we will just check that if our now playing movies, upcoming movies, trending , etc are in the store then we will check it and not make the api call again and again. implemented first in upComing movies.
