@@ -26,20 +26,6 @@ const GptSearchBar = () => {
       }
 
 
-//     const handleGptSearchClick = async () => {
-//         console.log(searchText.current.value);
-//         // make an api call to gpt api and get movie results.
-
-//         const gptQuery = "Act as a movie recommendation system and suggest some movies for the query" + searchText.current.value + "only give me names of 5 movies, comma seperated like the example result given ahead. Example Result: Gadar, Sholay, Don, Golmal, Koi Mil Gaya"
-
-//         const gptResults = await openai.chat.completions.create({
-//             messages: [{ role: 'user', content: gptQuery }],
-//             model: 'gpt-3.5-turbo',
-//           });
-//           console.log(gptResults.choices?.[0]?.message?.content);
-          
-//           const gptMovies = gptResults.choices?.[0]?.message?.content
-// }
             const handleGptSearchClick = async ()=>{
                 const gptQuery="Act as movie recommendation system and suggest some movies for the query "+searchText.current.value
                 + "only give me name of 5 movies, comma separated like this example given ahead . example result : avengers end game , the avengers  , iron man , avenger age of ultron , deadpool and wolverine, do not make names bold and give anything else"
